@@ -1,0 +1,39 @@
+package com.ai.study.controller;
+
+import jakarta.annotation.Resource;
+import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.rag.advisor.RetrievalAugmentationAdvisor;
+import org.springframework.ai.rag.retrieval.search.VectorStoreDocumentRetriever;
+import org.springframework.ai.vectorstore.VectorStore;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Flux;
+
+@RestController
+public class RagController {
+
+    @Resource
+    private ChatClient chatClient;
+    @Resource
+    private VectorStore vectorStore;
+
+    @GetMapping("/rag1")
+    public Flux<String> rag1(String msg ) {
+        RetrievalAugmentationAdvisor advisor = RetrievalAugmentationAdvisor.builder()
+                .documentRetriever(VectorStoreDocumentRetriever.builder()
+                        .vectorStore(vectorStore)
+                        .build())
+                .build();
+
+
+        return chatClient.prompt( )
+                .system("你是一个运维工程师，按照给出的编码给出对应的故障解释，否则回复我找不到信息")
+                .user(msg)
+                .advisors(advisor)
+                .stream()
+                .content();
+
+    }
+
+
+}

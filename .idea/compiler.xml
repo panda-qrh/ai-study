@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="langchain4j-01helloworld" />
+        <module name="SAA-01HelloWorld" />
+        <module name="SAA-03ChatModelChatClient" />
+        <module name="lc4j-03chatmemory" />
+        <module name="ai-qwen" />
+        <module name="langchain4j-10chat-persisitence" />
+        <module name="langchain4j-09chat-prompt" />
+        <module name="lc4j-06agent" />
+        <module name="SAA-08Persistent" />
+        <module name="langchain4j-13chat-rag" />
+        <module name="langchain4j-04low-high-api" />
+        <module name="langchian4j-07chat-stream" />
+        <module name="SAA-04StreamingChat" />
+        <module name="lc4j-07rag-1easy" />
+        <module name="SAA-05Prompt" />
+        <module name="langchian4j-08chat-memory" />
+        <module name="langchian4j-11function-calling" />
+        <module name="ai" />
+        <module name="lc4j-04aiservice" />
+        <module name="langchain4j-14chat-mcp" />
+        <module name="SAA-12RAG4AiOps" />
+        <module name="SAA-13ToolCalling" />
+        <module name="lc4j-02streamchat" />
+        <module name="langchain4j-12chat-embedding" />
+        <module name="SAA-06PromptTemplate" />
+        <module name="lc4j-07rag-3advanced" />
+        <module name="lc4j-05tool" />
+        <module name="lc4j-07rag-2naive" />
+        <module name="lc4j-06agent2" />
+        <module name="lc4j-01hello" />
+        <module name="lc4j-06agent3" />
+        <module name="langchain4j-03boot-integration" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lc4j-01hellolangchian" target="17" />
+      <module name="lc4j-02chatmemory" target="17" />
+      <module name="lc4j1140" target="1.5" />
+      <module name="saa-01helloworld" target="21" />
+      <module name="SAA-02Ollama" target="21" />
+      <module name="SAA-04StreamingOutput" target="21" />
+      <module name="SAA-07StructuredOutput" target="21" />
+      <module name="SAA-09Text2image" target="21" />
+      <module name="SAA-10Text2voice" target="21" />
+      <module name="SAA-11Embed2vector" target="21" />
+      <module name="SAA-14LocalMcpServer" target="21" />
+      <module name="SAA-15LocalMcpClient" target="21" />
+      <module name="SAA-16ClientCallBaiduMcpServer" target="21" />
+      <module name="SAA-17BailianRAG" target="21" />
+      <module name="spring-ai-alibaba-v1" target="21" />
+      <module name="spring-ai-v4" target="21" />
+      <module name="springai-alibaba" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SAA-01HelloWorld" options="-parameters" />
+      <module name="SAA-02Ollama" options="-parameters" />
+      <module name="SAA-03ChatModelChatClient" options="-parameters" />
+      <module name="SAA-04StreamingChat" options="-parameters" />
+      <module name="SAA-04StreamingOutput" options="-parameters" />
+      <module name="SAA-05Prompt" options="-parameters" />
+      <module name="SAA-06PromptTemplate" options="-parameters" />
+      <module name="SAA-07StructuredOutput" options="-parameters" />
+      <module name="SAA-08Persistent" options="-parameters" />
+      <module name="SAA-09Text2image" options="-parameters" />
+      <module name="SAA-10Text2voice" options="-parameters" />
+      <module name="SAA-11Embed2vector" options="-parameters" />
+      <module name="SAA-12RAG4AiOps" options="-parameters" />
+      <module name="SAA-13ToolCalling" options="-parameters" />
+      <module name="SAA-14LocalMcpServer" options="-parameters" />
+      <module name="SAA-15LocalMcpClient" options="-parameters" />
+      <module name="SAA-16ClientCallBaiduMcpServer" options="-parameters" />
+      <module name="SAA-17BailianRAG" options="-parameters" />
+      <module name="ai" options="-parameters" />
+      <module name="ai-qwen" options="-parameters" />
+      <module name="ai-qwen2" options="" />
+      <module name="langchain4j-01helloworld" options="-parameters" />
+      <module name="langchain4j-03boot-integration" options="-parameters" />
+      <module name="langchain4j-04low-high-api" options="-parameters" />
+      <module name="langchain4j-09chat-prompt" options="-parameters" />
+      <module name="langchain4j-10chat-persisitence" options="-parameters" />
+      <module name="langchain4j-12chat-embedding" options="-parameters" />
+      <module name="langchain4j-13chat-rag" options="-parameters" />
+      <module name="langchain4j-14chat-mcp" options="-parameters" />
+      <module name="langchian4j-07chat-stream" options="-parameters" />
+      <module name="langchian4j-08chat-memory" options="-parameters" />
+      <module name="langchian4j-11function-calling" options="-parameters" />
+      <module name="lc4j-01hello" options="-parameters" />
+      <module name="lc4j-01hellolangchian" options="-parameters" />
+      <module name="lc4j-02chatmemory" options="-parameters" />
+      <module name="lc4j-02streamchat" options="-parameters" />
+      <module name="lc4j-03chatmemory" options="-parameters" />
+      <module name="lc4j-04aiservice" options="-parameters" />
+      <module name="lc4j-05tool" options="-parameters" />
+      <module name="lc4j-06agent" options="-parameters" />
+      <module name="lc4j-06agent2" options="-parameters" />
+      <module name="lc4j-06agent3" options="-parameters" />
+      <module name="lc4j-07rag-1easy" options="-parameters" />
+      <module name="lc4j-07rag-2naive" options="-parameters" />
+      <module name="lc4j-07rag-3advanced" options="-parameters" />
+      <module name="lc4j-1190" options="" />
+      <module name="lc4j1140" options="" />
+      <module name="saa-01helloworld" options="" />
+      <module name="spring-ai-alibaba-v1" options="" />
+      <module name="spring-ai-v4" options="-parameters" />
+      <module name="springai-alibaba" options="" />
+    </option>
+  </component>
+</project>

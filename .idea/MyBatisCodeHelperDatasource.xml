@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="javaTypeToDabaseTypes" value="java.lang.Integer int(11) not null default 0&#10;java.lang.Long bigint(15) not null default 0&#10;java.lang.Short smallint(5) not null default 0&#10;java.lang.Byte tinyint(3) not null default 0&#10;java.lang.Float float(10,2) not null default 0.0&#10;java.lang.Double double(16,4) not null default 0.0&#10;java.math.BigDecimal decimal(13,4) not null default 0&#10;java.lang.Boolean tinyint(1) not null default 0&#10;java.lang.String varchar(255) not null default ''&#10;java.util.Date datetime &#10;java.time.LocalDateTime datetime &#10;java.time.LocalDate date" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

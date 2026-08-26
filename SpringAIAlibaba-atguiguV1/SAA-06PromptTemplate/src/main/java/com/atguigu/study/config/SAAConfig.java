@@ -1,0 +1,38 @@
+package com.atguigu.study.config;
+
+import com.alibaba.cloud.ai.dashscope.api.DashScopeApi;
+import com.alibaba.cloud.ai.dashscope.chat.DashScopeChatModel;
+import com.alibaba.cloud.ai.dashscope.chat.DashScopeChatOptions;
+import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.model.ChatModel;
+import org.springframework.ai.chat.prompt.ChatOptions;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SAAConfig {
+    private static final String apiKey=System.getenv("API_KEY");
+    private static final String url="https://dashscope.aliyuncs.com/compatible-mode/v1";
+    private static final String model="qwen-plus";
+    @Bean
+    public ChatModel chatModel() {
+        return DashScopeChatModel.builder()
+                .dashScopeApi(DashScopeApi.builder()
+                        .apiKey(apiKey)
+                        .baseUrl(url)
+                        .build())
+                .defaultOptions(DashScopeChatOptions.builder()
+                        .withModel(model)
+                        .build())
+                .build();
+    }
+
+    @Bean
+    public ChatClient chatClient( ChatModel chatModel) {
+        return ChatClient.builder(chatModel)
+                .defaultOptions(ChatOptions.builder()
+                        .model(model)
+                        .build())
+                .build();
+    }
+}

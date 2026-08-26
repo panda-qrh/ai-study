@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/SpringAIAlibaba-atguiguV1/SAA-04StreamingChat" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ai-qwen/ai-qwen/pom.xml" />
+        <option value="$PROJECT_DIR$/ai-qwen/pom.xml" />
+        <option value="$PROJECT_DIR$/ai-qwen2/pom.xml" />
+        <option value="$PROJECT_DIR$/ai-qwen2/langchain4j-01helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/langchain4j-03boot-integration/pom.xml" />
+        <option value="$PROJECT_DIR$/ai-qwen2/langchain4j-04low-high-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ai-qwen2/langchian4j-07chat-stream/pom.xml" />
+        <option value="$PROJECT_DIR$/ai-qwen2/langchian4j-08chat-memory/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringAIAlibaba-atguiguV1/SAA-05Prompt/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringAIAlibaba-atguiguV1/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringAIAlibaba-atguiguV1/SAA-06PromptTemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringAIAlibaba-atguiguV1/SAA-08Persistent/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringAIAlibaba-atguiguV1/SAA-12RAG4AiOps/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringAIAlibaba-atguiguV1/SAA-13ToolCalling/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ai-v4/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j1140/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j1140/lc4j-01hellolangchian/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j1140/lc4j-02chatmemory/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-01hello/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-02streamchat/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-03chatmemory/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-04aiservice/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-05tool/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-06agent/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-06agent2/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-06agent3/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-07rag-1easy/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-07rag-2navie/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-07rag-3advanced/pom.xml" />
+        <option value="$PROJECT_DIR$/ai-qwen2/langchain4j-14chat-mcp/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/lc4j1140/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id>正则表达式</id>
+          </State>
+          <State>
+            <id>版本控制</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>版本控制</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_25" default="true" project-jdk-name="25" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="langchain4j-01helloworld" />
+        <module name="langchain4j-12chat-embedding" />
+        <module name="langchian4j-08chat-memory" />
+        <module name="langchian4j-11function-calling" />
+        <module name="langchain4j-13chat-rag" />
+        <module name="langchain4j-04low-high-api" />
+        <module name="langchian4j-07chat-stream" />
+        <module name="langchain4j-10chat-persisitence" />
+        <module name="langchain4j-03boot-integration" />
+        <module name="langchain4j-09chat-prompt" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="langchain4j-01helloworld" options="-parameters" />
+      <module name="langchain4j-03boot-integration" options="-parameters" />
+      <module name="langchain4j-04low-high-api" options="-parameters" />
+      <module name="langchain4j-09chat-prompt" options="-parameters" />
+      <module name="langchain4j-10chat-persisitence" options="-parameters" />
+      <module name="langchain4j-12chat-embedding" options="-parameters" />
+      <module name="langchain4j-13chat-rag" options="-parameters" />
+      <module name="langchian4j-07chat-stream" options="-parameters" />
+      <module name="langchian4j-08chat-memory" options="-parameters" />
+      <module name="langchian4j-11function-calling" options="-parameters" />
+    </option>
+  </component>
+</project>

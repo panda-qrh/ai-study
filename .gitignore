@@ -1,0 +1,80 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE - IntelliJ IDEA
+# 保留通用配置，忽略本地敏感信息
+.idea/*.iml
+.idea/*.iws
+.idea/dataSources/
+.idea/dataSources.local.xml
+.idea/workspace.xml
+.idea/shelf/
+.idea/httpRequests/
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+logs/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# OSGi
+*.bnd
+
+# Maven wrapper
+mvnw
+mvnw.cmd
+
+# Gradle wrapper
+gradlew
+gradlew.bat
+
+# Spring Boot
+application*.properties
+application*.yml
+application*.yaml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+*.pid
+
+# Test reports
+test-output/
+surefire-reports/
+
+# Coverage
+.jacoco/
+*.exec
+
+# Cloud storage
+*.db
+*.sqlite
