@@ -3,14 +3,9 @@ package com;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.ReentrantLock;
-
 @SpringBootApplication
-public class Lc4j07rag3advancedApplication {
-
+public class Sm01helloApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Lc4j07rag3advancedApplication.class, args);
+        SpringApplication.run(Sm01helloApplication.class, args);
     }
-
 }

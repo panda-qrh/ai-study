@@ -18,14 +18,16 @@
         <module name="SAA-08Persistent" />
         <module name="langchain4j-13chat-rag" />
         <module name="langchain4j-04low-high-api" />
+        <module name="sm-01hello" />
         <module name="langchian4j-07chat-stream" />
         <module name="SAA-04StreamingChat" />
         <module name="lc4j-07rag-1easy" />
+        <module name="lc4j-08javamcp" />
         <module name="SAA-05Prompt" />
         <module name="langchian4j-08chat-memory" />
         <module name="langchian4j-11function-calling" />
-        <module name="ai" />
         <module name="lc4j-04aiservice" />
+        <module name="sa2-02streamchat" />
         <module name="langchain4j-14chat-mcp" />
         <module name="SAA-12RAG4AiOps" />
         <module name="SAA-13ToolCalling" />
@@ -38,6 +40,7 @@
         <module name="lc4j-06agent2" />
         <module name="lc4j-01hello" />
         <module name="lc4j-06agent3" />
+        <module name="sa2-01hello" />
         <module name="langchain4j-03boot-integration" />
       </profile>
     </annotationProcessing>
@@ -81,7 +84,7 @@
       <module name="SAA-15LocalMcpClient" options="-parameters" />
       <module name="SAA-16ClientCallBaiduMcpServer" options="-parameters" />
       <module name="SAA-17BailianRAG" options="-parameters" />
-      <module name="ai" options="-parameters" />
+      <module name="ai" options="" />
       <module name="ai-qwen" options="-parameters" />
       <module name="ai-qwen2" options="" />
       <module name="langchain4j-01helloworld" options="-parameters" />
@@ -108,12 +111,18 @@
       <module name="lc4j-07rag-1easy" options="-parameters" />
       <module name="lc4j-07rag-2naive" options="-parameters" />
       <module name="lc4j-07rag-3advanced" options="-parameters" />
+      <module name="lc4j-08javamcp" options="-parameters" />
       <module name="lc4j-1190" options="" />
       <module name="lc4j1140" options="" />
+      <module name="sa2-01hello" options="-parameters" />
+      <module name="sa2-02streamchat" options="-parameters" />
       <module name="saa-01helloworld" options="" />
+      <module name="sm-01hello" options="-parameters" />
       <module name="spring-ai-alibaba-v1" options="" />
       <module name="spring-ai-v4" options="-parameters" />
+      <module name="spring-ai2" options="" />
       <module name="springai-alibaba" options="" />
+      <module name="statemachine-spring" options="" />
     </option>
   </component>
 </project>

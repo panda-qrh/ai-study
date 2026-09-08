@@ -21,12 +21,36 @@
         <langchain4j.version>1.19.0</langchain4j.version>
     </properties>
 
+    <modules>
+        <module>lc4j-01hello</module>
+        <module>lc4j-02streamchat</module>
+        <module>lc4j-03chatmemory</module>
+        <module>lc4j-04aiservice</module>
+        <module>lc4j-05tool</module>
+        <module>lc4j-06agent</module>
+        <module>lc4j-06agent2</module>
+        <module>lc4j-06agent3</module>
+        <module>lc4j-07rag-1easy</module>
+        <module>lc4j-07rag-2naive</module>
+        <module>lc4j-07rag-3advanced</module>
+        <module>lc4j-08javamcp</module>
+    </modules>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-bom</artifactId>
                 <version>${langchain4j.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--            mcp 服务端-->
+            <dependency>
+                <groupId>dev.langchain4j</groupId>
+                <artifactId>langchain4j-community-bom</artifactId>
+                <version>1.19.0-beta29</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -53,7 +77,6 @@
         </dependency>
 
     </dependencies>
-
 
 
 </project>

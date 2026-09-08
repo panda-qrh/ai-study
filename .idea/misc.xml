@@ -39,6 +39,13 @@
         <option value="$PROJECT_DIR$/lc4j-1190/lc4j-07rag-2navie/pom.xml" />
         <option value="$PROJECT_DIR$/lc4j-1190/lc4j-07rag-3advanced/pom.xml" />
         <option value="$PROJECT_DIR$/ai-qwen2/langchain4j-14chat-mcp/pom.xml" />
+        <option value="$PROJECT_DIR$/statemachine-spring/pom.xml" />
+        <option value="$PROJECT_DIR$/statemachine-spring/sm-01hello/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-07rag-2naive/pom.xml" />
+        <option value="$PROJECT_DIR$/lc4j-1190/lc4j-08javamcp/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ai2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ai2/sa2-01hello/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ai2/sa2-02streamchat/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

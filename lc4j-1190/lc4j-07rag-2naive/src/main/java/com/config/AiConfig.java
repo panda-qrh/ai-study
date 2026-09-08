@@ -97,10 +97,10 @@ public class AiConfig {
         // overlap=50:    相邻片段重叠 50 个字符，保证语义连贯
         DocumentSplitter splitter = new DocumentByParagraphSplitter(500, 50);
         // 执行分割，查看 TextSegment 产出
-        List<TextSegment> textSegments = splitter.splitAll(documents);
+//        List<TextSegment> textSegments = splitter.splitAll(documents);
 
         // ==================== 4. Document Transformer（可选）====================
-        // 可以在此对 Document 做自定义转换
+        // 可以在此对 Document 做自定义转换 需要自己定制的 DocumentTransformer 方案
         // 通过 EmbeddingStoreIngestor.builder().documentTransformer(...) 注入
         // 例如：过滤空白文档、统一编码、添加自定义 Metadata 等
         // 本例中不做额外转换，直接进入下一步

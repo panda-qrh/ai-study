@@ -10,7 +10,8 @@ import reactor.core.publisher.Flux;
         chatModel = "chatModel",
         streamingChatModel = "streamingChatModel",
         chatMemoryProvider = "chatMemoryProvider",
-        contentRetriever = "contentRetriever")
+        contentRetriever = "contentRetriever",
+        retrievalAugmentor = "retrievalAugmentor")
 public interface Assistant {
     Flux<String> chat(@MemoryId String memoryId, @UserMessage String message);
 }

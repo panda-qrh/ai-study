@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/statemachine-spring/sm-01hello/sm-01hello.iml" filepath="$PROJECT_DIR$/statemachine-spring/sm-01hello/sm-01hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ai-v4/spring-ai-v4.iml" filepath="$PROJECT_DIR$/spring-ai-v4/spring-ai-v4.iml" />
     </modules>
   </component>
