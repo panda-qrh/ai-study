@@ -53,6 +53,10 @@
     <file url="file://$PROJECT_DIR$/ai-qwen2/langchian4j-11function-calling/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ai-qwen2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ai-qwen2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/drools-study/d-01hellodrools/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/drools-study/d-02drlprogram/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/drools-study/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/drools-study/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lc4j-1190/lc4j-01hello/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lc4j-1190/lc4j-02streamchat/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lc4j-1190/lc4j-03chatmemory/src/main/java" charset="UTF-8" />

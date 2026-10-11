@@ -1,0 +1,26 @@
+//下单时根据用户等级和订单金额自动算折扣
+package rules
+
+import com.pojo.Order
+import com.pojo.User
+
+rule "订单金额>1000，且用户是VIP -> 折扣设为0.8"
+    dialect "java"
+    no-loop
+    when
+        $o:Order(amount>1000,user.level=="VIP")
+    then
+        $o.setDiscount(0.8);
+        update($o);
+end
+
+rule "订单金额在500~1000之间，或者用户年龄>60 -> 折扣设为0.9"
+    dialect "java"
+    no-loop
+    when
+        $o:Order((amount>=500 && amount<=1000) || user.age>60)
+    then
+        modify($o){
+            setDiscount(0.9)
+        }
+end

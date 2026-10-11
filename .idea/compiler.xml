@@ -11,6 +11,7 @@
         <module name="SAA-01HelloWorld" />
         <module name="SAA-03ChatModelChatClient" />
         <module name="lc4j-03chatmemory" />
+        <module name="d-01hellodrools" />
         <module name="ai-qwen" />
         <module name="langchain4j-10chat-persisitence" />
         <module name="langchain4j-09chat-prompt" />
@@ -27,6 +28,7 @@
         <module name="langchian4j-08chat-memory" />
         <module name="langchian4j-11function-calling" />
         <module name="lc4j-04aiservice" />
+        <module name="d-02drlprogram" />
         <module name="sa2-02streamchat" />
         <module name="langchain4j-14chat-mcp" />
         <module name="SAA-12RAG4AiOps" />
@@ -87,6 +89,9 @@
       <module name="ai" options="" />
       <module name="ai-qwen" options="-parameters" />
       <module name="ai-qwen2" options="" />
+      <module name="d-01hellodrools" options="-parameters" />
+      <module name="d-02drlprogram" options="-parameters" />
+      <module name="drools-study" options="" />
       <module name="langchain4j-01helloworld" options="-parameters" />
       <module name="langchain4j-03boot-integration" options="-parameters" />
       <module name="langchain4j-04low-high-api" options="-parameters" />

@@ -1,0 +1,36 @@
+//运营对用户分群，识别流失 / 活跃 / 风险用户。
+package rules
+
+import com.pojo.Order
+import com.pojo.User
+
+rule "从未下过单的用户"
+    dialect "java"
+    no-loop
+    when
+        $u:User()
+        not Order(user==$u)
+    then
+        System.out.println("流失用户："+$u.getName());
+end
+
+rule "至少有一笔订单的用户"
+    dialect "java"
+    no-loop
+    when
+        $u:User()
+        exists Order(user==$u , refunded==false)
+    then
+        System.out.println("活跃用户："+$u.getName());
+end
+
+rule "有订单、但所有订单都退款了"
+    dialect "java"
+    no-loop
+    when
+        $u:User()
+        exists Order(user==$u)
+        not Order(user==$u,refunded==false)
+    then
+         System.out.println("风险用户："+$u.getName());
+end

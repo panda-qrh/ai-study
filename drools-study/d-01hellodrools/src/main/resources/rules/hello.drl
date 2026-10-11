@@ -1,0 +1,36 @@
+//1、package：规则的命名空间
+package  rules
+
+//2、import：引入规则中用到的java类
+import com.pojo.UserMessage
+
+//3、rule：一条规则，when（条件）+then（动作）
+rule "hello drools rule"
+    //指定RHS使用java方言（drools 10推荐）
+    dialect "java"
+    no-loop
+    when
+        //LSH：匹配status==hello的Message，绑定到变量$m
+        $m:UserMessage(status==UserMessage.HELLO)
+   then
+    //RHS：条件满足后执行的动作
+    System.out.println("rule1 规则触发！收到消息："+$m.getText());
+    $m.setText("再见，drools");
+    $m.setIsReceive(true);
+    $m.setStatus(UserMessage.GOODBYE);
+    //通知引擎：事实被修改了，需要重新匹配
+//    update($m);
+end
+
+rule "goodbye drools rule"
+    dialect "java"
+    no-loop
+    when
+        $m:UserMessage(status==UserMessage.GOODBYE)
+    then
+        System.out.println("rule2 规则触发！收到消息："+$m.getText());
+        $m.setIsReceive(true);
+        $m.setText("欢迎再次光临!");
+        $m.setStatus(UserMessage.GOODBYE);
+//        update($m);
+end

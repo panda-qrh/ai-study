@@ -21,4 +21,12 @@ public class StreamController {
                 .chatResponse();
 
     }
+
+    @GetMapping("/stream2")
+    public Flux<String> streamChatString(@RequestParam(defaultValue = "java中的stream怎么使用？")String message) {
+        return chatClient.prompt()
+                .user(message)
+                .stream()
+                .content();
+    }
 }

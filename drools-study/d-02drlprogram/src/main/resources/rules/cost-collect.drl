@@ -1,0 +1,45 @@
+package rules
+
+import com.pojo.User
+import com.pojo.Order
+import java.util.List
+
+rule "累计消费超过5000的用户"
+    dialect "java"
+    no-loop
+    when
+        $u:User()
+        $total:Number(doubleValue>5000) from accumulate(
+            Order(user==$u,$amount:amount),
+            sum($amount)
+        )
+    then
+        modify($u){
+            setLevel("VIP")
+        }
+        System.out.println($u.getName()+"累计消费"+$total+"升级VIP");
+end
+
+rule "订单笔数超过3的用户"
+    dialect "java"
+    no-loop
+    when
+        $u:User()
+        $orderCount:Number(intValue>3) from accumulate(
+            Order(user==$u),
+            count()
+        )
+    then
+        System.out.println($u.getName()+"是高频用户");
+ end
+
+ rule "收集所有金额>1000的大额订单"
+    dialect "java"
+    no-loop
+    when
+        $bigOrder:List() from collect(
+            Order(amount>1000)
+        )
+    then
+        System.out.printf("大额订单共%s笔\n",$bigOrder.size());
+end
