@@ -1,0 +1,9 @@
+package rules
+
+//不改动任何事实，只查询"被拦截的订单"有哪些。
+
+import com.pojo.Order
+
+query "拦截订单"
+    $o:Order(blocked==true)
+end

@@ -1,0 +1,25 @@
+package rules
+
+//给订单算折扣
+import com.pojo.Order
+
+
+function double calcuDiscount(double amount){
+    if (amount>10000){
+        return 0.6;
+    }
+    if(amount>5000){
+        return 0.8;
+    }
+    return 0.9;
+}
+
+rule "计算折扣"
+    dialect "java"
+    no-loop
+    when
+        $o:Order()
+    then
+        $o.setAmount(calcuDiscount($o.getAmount()));
+        update($o);
+end

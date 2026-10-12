@@ -1,0 +1,35 @@
+package rules
+
+import com.pojo.Order
+
+//订单要经过"风控 → 校验 → 下单"三个阶段，用代码控制执行顺序
+
+rule "风控"
+    dialect "java"
+    no-loop
+    agenda-group "risk"
+    when
+        Order()
+    then
+        System.out.println("风控");
+end
+
+rule "校验"
+    dialect "java"
+    no-loop
+    agenda-group "validate"
+    when
+        Order()
+    then
+        System.out.println("校验");
+end
+
+rule "下单"
+    dialect "java"
+    no-loop
+    agenda-group "checkout"
+    when
+        Order()
+    then
+        System.out.println("下单");
+end

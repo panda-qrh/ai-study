@@ -11,7 +11,6 @@
         <module name="SAA-01HelloWorld" />
         <module name="SAA-03ChatModelChatClient" />
         <module name="lc4j-03chatmemory" />
-        <module name="d-01hellodrools" />
         <module name="ai-qwen" />
         <module name="langchain4j-10chat-persisitence" />
         <module name="langchain4j-09chat-prompt" />
@@ -28,7 +27,6 @@
         <module name="langchian4j-08chat-memory" />
         <module name="langchian4j-11function-calling" />
         <module name="lc4j-04aiservice" />
-        <module name="d-02drlprogram" />
         <module name="sa2-02streamchat" />
         <module name="langchain4j-14chat-mcp" />
         <module name="SAA-12RAG4AiOps" />
@@ -44,6 +42,18 @@
         <module name="lc4j-06agent3" />
         <module name="sa2-01hello" />
         <module name="langchain4j-03boot-integration" />
+      </profile>
+      <profile name="Annotation profile for drools-study" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="d-03ruleprops" />
+        <module name="d-04decisiontable" />
+        <module name="d-01hellodrools" />
+        <module name="d-02drlprogram" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -91,7 +101,9 @@
       <module name="ai-qwen2" options="" />
       <module name="d-01hellodrools" options="-parameters" />
       <module name="d-02drlprogram" options="-parameters" />
-      <module name="drools-study" options="" />
+      <module name="d-03ruleprops" options="-parameters" />
+      <module name="d-04decisiontable" options="-parameters" />
+      <module name="drools-study" options="-parameters" />
       <module name="langchain4j-01helloworld" options="-parameters" />
       <module name="langchain4j-03boot-integration" options="-parameters" />
       <module name="langchain4j-04low-high-api" options="-parameters" />

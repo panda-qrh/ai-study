@@ -1,0 +1,35 @@
+package rules
+
+import com.pojo.Order
+import com.pojo.ApprovalRequest
+
+//大额订单需要人工审批，审批完成后清理
+
+rule "订单金额>10_000 -> 插入一个ApprovalRequest审批请求"
+    dialect "java"
+    no-loop
+    when
+        $o:Order(amount > 10000)
+    then
+        insert(new ApprovalRequest($o));
+end
+
+rule "审批请求"
+    dialect "java"
+    no-loop
+    when
+        $a:ApprovalRequest()
+    then
+        System.out.printf("订单 %s 需要审批\n",$a);
+end
+
+rule "被风控拦截的订单 -> 删除掉，并从工作内存中移除"
+    dialect "java"
+    no-loop
+    ruleflow-group "risk"
+    when
+        $o:Order(blocked==true)
+    then
+        System.out.printf("订单 %s 一杯拦截删除\n",$o);
+        delete($o);
+end

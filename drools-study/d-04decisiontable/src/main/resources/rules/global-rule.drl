@@ -1,0 +1,14 @@
+package rules
+
+import com.pojo.Order
+
+global java.util.List resultList
+
+rule "金额>1000的订单 -> 添加到resultList"
+    dialect "java"
+    no-loop
+    when
+        $o:Order(amount>1000)
+    then
+        resultList.add($o.getId());
+end

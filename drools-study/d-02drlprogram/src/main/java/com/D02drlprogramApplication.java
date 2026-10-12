@@ -22,8 +22,7 @@ public class D02drlprogramApplication {
 
     public static void costCollect() {
         KieServices kieServices = KieServices.Factory.get();
-        KieFileSystem kieFileSystem = kieServices.newKieFileSystem()
-                .write(ResourceFactory.newClassPathResource("rules/cost-collect.drl"));
+        KieFileSystem kieFileSystem = kieServices.newKieFileSystem().write(ResourceFactory.newClassPathResource("rules/cost-collect.drl"));
         KieBuilder kieBuilder = kieServices.newKieBuilder(kieFileSystem).buildAll(ExecutableModelProject.class);
         if (kieBuilder.getResults().hasMessages(Message.Level.ERROR)){
             throw new RuntimeException("规则编译出错："+kieBuilder.getResults().toString());

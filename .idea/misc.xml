@@ -49,6 +49,8 @@
         <option value="$PROJECT_DIR$/drools-study/pom.xml" />
         <option value="$PROJECT_DIR$/drools-study/d-01hellodrools/pom.xml" />
         <option value="$PROJECT_DIR$/drools-study/d-02drlprogram/pom.xml" />
+        <option value="$PROJECT_DIR$/drools-study/d-03ruleprops/pom.xml" />
+        <option value="$PROJECT_DIR$/drools-study/d-04decisiontable/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

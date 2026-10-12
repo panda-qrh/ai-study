@@ -1,0 +1,23 @@
+﻿RuleSet,dtfull
+Import,com.pojo.Order
+import,com.pojo.Order2
+Variables,java.util.List resultList
+Functions,function double floorHalf(double d) { return d < 0.5 ? 0.5 : d; }
+functions,function double calcuDiscount(double amount){if(amount>10000){return 0.6;}if(amount>5000){return 0.8;}if(amount>1000){return 0.9;}  }
+Queries,query ""高额订单查询"" $o : Order(amount > 5000) end
+Sequential,false
+EscapeQuotes,false
+NO-LOOP,true
+PRIORITY,10
+AGENDA-GROUP,pricing
+AUTO-FOCUS,true
+LOCK-ON-ACTIVE,true
+,
+RuleTable 完整折扣,,,,
+NAME,DESCRIPTION,CONDITION,ACTION,METADATA
+,,$o:Order,,
+,,"amount >= $1 && amount < $2","$o.setDiscount($1);update($o);",author($param)
+,,,,
+大额订单,金额1万以上打6折,"10000,99999999",0.6,ops
+中等订单,5千到1万打8折,"5000,10000",0.8,ops
+小额订单,1千到5千打9折,"1000,5000",0.9,ops

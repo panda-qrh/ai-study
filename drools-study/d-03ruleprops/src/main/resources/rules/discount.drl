@@ -1,0 +1,39 @@
+package rules
+
+import com.pojo.Order
+import com.pojo.ApprovalRequest
+
+//折扣分档
+
+rule "金额>10000打6折"
+    dialect "java"
+    no-loop
+    salience 10
+    activation-group "discount"
+    when
+        $o:Order(amount>10000)
+    then
+        System.out.println("打6折");
+end
+
+rule "金额>5000打8折"
+    dialect "java"
+    no-loop
+    salience 9
+    activation-group "discount"
+    when
+        $o:Order(amount>5000)
+    then
+        System.out.println("打8折");
+end
+
+rule "金额>1000打9折"
+    dialect "java"
+    no-loop
+    salience 8
+    activation-group "discount"
+    when
+        $o:Order(amount>1000)
+    then
+        System.out.println("打9折");
+end
